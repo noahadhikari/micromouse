@@ -1,4 +1,4 @@
-# Lab 1: Assembly and CircuitPython Basics
+# Lab 1: Assembly
 
 ## Assembly
 
