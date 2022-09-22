@@ -1,4 +1,4 @@
-# Lab 4: Odometry and Motor Control
+# Lab 5: Odometry and Motor Control
 
 ## Background
 
