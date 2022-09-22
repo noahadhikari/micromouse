@@ -1,4 +1,4 @@
-# Lab 2: Encoders
+# Lab 3: Encoders
 
 ## Background
 
