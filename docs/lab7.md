@@ -1,4 +1,4 @@
-# Lab 6: More PID
+# Lab 7: More PID
 
 ## Background
 
