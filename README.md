@@ -4,8 +4,8 @@ MMv3 is the 3rd generation robot platform used to teach the IEEE Micromouse DeCa
 
 ## Setup
 
-1. Follow the assembly instructions in [lab1](docs/lab1.md) using the latest **BOM** (see releases).
-2. Plug mouse into your computer and upload the latest **firmware.uf2** (see releases) by dragging the file into the `RPI-RP2` folder that shows up. It should disappear and reappear as a `CIRCUITPY` folder.
+1. Follow the assembly instructions in [lab1](docs/lab1.md) using the latest **BOM**.
+2. Plug mouse into your computer and upload the latest **firmware.uf2** (see [releases](https://circuitpython.org/board/raspberry_pi_pico/)) by dragging the file into the `RPI-RP2` folder that shows up. It should disappear and reappear as a `CIRCUITPY` folder.
     * If you've uploaded firmware before, you'll need to hold the `BOOTSEL` button on the Pi Pico while plugging in.
 3. Download the latest CircuitPython [libraries](https://circuitpython.org/libraries) (for Version 7.x) and upload the following ones to the lib/ folder on your mouse.
     * adafruit_motor/
