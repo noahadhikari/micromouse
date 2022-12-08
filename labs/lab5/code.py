@@ -45,4 +45,5 @@ rmot.decay_mode = motor.SLOW_DECAY
 
 if __name__ == "__main__":
     print("hi :P")
-    lmot.throttle, rmot.throttle = 0.2, 0.2
+    while True:
+        lmot.throttle, rmot.throttle = 0.2, 0.2
