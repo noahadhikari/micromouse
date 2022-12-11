@@ -44,9 +44,9 @@ Note this checkpoint has no code.
 
 Copy over the skeleton code in [labs/lab6/](../labs/lab6) onto your mouse. To encourage code readability, we've added a couple of function definitions that modularize the controller. Adapt your P controller code from [Lab 5](lab5.md) to these functions by filling out the TODOs. If you have a better way of organizing the functions, feel free to change things. Ultimately, it should have the same behavior as Checkoff #2 from Lab 5.
 
-Next, add I and D terms to both your angular and linear P controllers. You may find the `global` or `nonlocal` keywords to be useful for accessing variables defined outside of a function. We highly recommend just tuning the PID constants for your linear controller first and then tuning the angular controller when you implement turning. It's generally easier when that specific controller is being exercised. Good starting values are 10x smaller than <img src="https://render.githubusercontent.com/render/math?math=K_p">.
+Next, add I and D terms to both your angular and linear P controllers. You may find the `global` or `nonlocal` keywords to be useful for accessing variables defined outside of a function. We highly recommend just tuning the PID constants for your linear controller first and then tuning the angular controller when you implement turning. It's generally easier when that specific controller is being exercised. Good starting values are 10x smaller than $K_p$.
 
-Finally, have your mouse turn 90° in place. This should be as simple as setting a different target <img src="https://render.githubusercontent.com/render/math?math=%5Ctheta">. For an added challenge, let's create a `turn_left` function which internally loops until the mouse turns about 90° (you choose the threshold for acceptable error) before returning. You may find it useful to be able to reset the odometry back to 0 with the following function.
+Finally, have your mouse turn 90° in place. This should be as simple as setting a different target $\theta$. For an added challenge, let's create a `turn_left` function which internally loops until the mouse turns about 90° (you choose the threshold for acceptable error) before returning. You may find it useful to be able to reset the odometry back to 0 with the following function.
 
 ```python
 def reset_odometry():
