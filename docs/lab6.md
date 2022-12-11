@@ -44,10 +44,10 @@ When solving mazes, it is quite useful to be able to drive forward a set distanc
 * What is the error for traveling a set distance?
 * Given an error, how do you change each motor's power to correct for it?
 
-When implementing the P controller, start with <img src="https://render.githubusercontent.com/render/math?math=K_p"> values of 0.1 and tune. Don't remove your angular correction code from before since we still want to drive straight. Since we want to leave a little wiggle room for the angular correction, limit the linear correction term to around 0.9.
+When implementing the P controller, start with $K_p$ values of 0.1 and tune. Don't remove your angular correction code from before since we still want to drive straight. Since we want to leave a little wiggle room for the angular correction, limit the linear correction term to around 0.9.
 
 ### Checkoff #2
 
 1. Demonstrate your working P controller. Print out your error term too.
 2. How do you compute the error term?
-3. If we want our applied correction power <img src="https://render.githubusercontent.com/render/math?math=u%28t%29"> to be maximized (<img src="https://render.githubusercontent.com/render/math?math=u%28t%29%3D1">) when the error is 100mm, what is <img src="https://render.githubusercontent.com/render/math?math=K_p">?
+3. If we want our applied correction power $u(t)$ to be maximized $(u(t) = 1)$ when the error is 100mm, what is $K_p$?
