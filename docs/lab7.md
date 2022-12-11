@@ -13,7 +13,7 @@ Recall our implementation of a **proportional (P) controller** from the last lab
 Proportional control works pretty well for making our mouse drive straight, but you may have noticed a constant offset error. The motors naturally travel at different speeds given the same power and the constant offset error actually accounts for that difference. If we had zero error, we'd actually apply the same power to each motor, generating an error. How might we fix this? What if we kept track of the total error?
 
 <p align="center">
-    $u(t) = K_pe(t) + K_i\int_0^1 e(\tau) d\tau$
+    $u(t) = K_pe(t) + K_i\int_0^t e(\tau) d\tau$
 </p>
 
 This is called a **proportional-integral (PI) controller**. The integral keeps track of the total error (both positive and negative) since we first started the controller. Even small errors will cause the integral term to eventually grow large enough and get $u(t)$ to push our mouse back on track.
@@ -21,7 +21,7 @@ This is called a **proportional-integral (PI) controller**. The integral keeps t
 In order to dampen oscillations and prevent overshoot, we might want to consider the derivative of our error too. This prevents our error from changing too quickly.
 
 <p align="center">
-    $u(t) = K_pe(t) + K_i\int_0^1 e(\tau) d\tau + K_d\frac{de(t)}{dt}$
+    $u(t) = K_pe(t) + K_i\int_0^t e(\tau) d\tau + K_d\frac{de(t)}{dt}$
 </p>
 
 With these three terms, we have our **proportional-integral-derivative (PID) controller**. $K_p$, $K_i$, and $K_d$ are tunable gains that determine the behavior of our error (rise time, peak, overshoot, etc.).
