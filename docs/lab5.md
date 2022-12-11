@@ -25,7 +25,7 @@ Consider the coordinate frame in the diagram above. When the mouse moves forward
 We are mostly interested in the forward distance and rotational distance of our mouse. Intuitively, the center of the mouse moves with a distance that is the average of the wheel distances. Rotation in radians is arc distance divided by diameter which in our case would be the difference in wheel distances divided by the distance between the wheels. We can derive the following formulas.
 
 <p align="center">
-    <img src="https://render.githubusercontent.com/render/math?math=d_f%3D%5Cfrac%7Bd_l%2Bd_r%7D%7B2%7D">
+    $d_f = \frac{d_l + d_r}{2}$
     <br>
     <img src="https://render.githubusercontent.com/render/math?math=%5Ctheta%3D%5Cfrac%7Bd_r-d_l%7D%7Bd%7D">
 </p>
