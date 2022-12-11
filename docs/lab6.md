@@ -15,7 +15,7 @@ One common way to do feedback control is PID. For now, you'll be implementing ju
 For a P controller, we vary our motor power proportionally to our error. That is, the larger our error, the more power we apply to correct for it.
 
 <p align="center">
-    <img src="https://render.githubusercontent.com/render/math?math=u%28t%29%20%3D%20K_pe%28t%29">
+    $u(t) = K_pe(t)$
 </p>
 
 ## Drive Straight
