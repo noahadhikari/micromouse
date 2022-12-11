@@ -24,11 +24,11 @@ Copy over the skeleton code in [labs/lab5/](../labs/lab5) onto your mouse. Our c
 
 Your job is to apply P control to make the mouse drive straight. The linear velocity doesn't matter too much, just the fact that it doesn't veer left or right. To do this, it would help to answer the following questions.
 
-* What is <img src="https://render.githubusercontent.com/render/math?math=%5Ctheta"> when driving straight?
+* What is $\theta$ when driving straight?
 * What is the error when driving straight?
 * Given an error, how do you change each motor's power to correct for it?
 
-When implementing the P controller, start with <img src="https://render.githubusercontent.com/render/math?math=K_p"> values of around 0.1 and tune up and down from there based on performance. To make sure the mouse does move forward, add 0.2 to the `throttle` for each motor in addition to your correction term.
+When implementing the P controller, start with $K_p$ values of around 0.1 and tune up and down from there based on performance. To make sure the mouse does move forward, add 0.2 to the `throttle` for each motor in addition to your correction term.
 
 ### Checkoff #1
 
