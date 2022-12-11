@@ -27,7 +27,7 @@ We are mostly interested in the forward distance and rotational distance of our 
 <p align="center">
     $d_f = \frac{d_l + d_r}{2}$
     <br>
-    <img src="https://render.githubusercontent.com/render/math?math=%5Ctheta%3D%5Cfrac%7Bd_r-d_l%7D%7Bd%7D">
+    $\theta = \frac{d_r - d_l}{d}$
 </p>
 
 ### Motor Control
