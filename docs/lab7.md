@@ -7,21 +7,21 @@ In the previous lab we were able to get our mice driving a certain distance reas
 Recall our implementation of a **proportional (P) controller** from the last lab.
 
 <p align="center">
-    <img src="https://render.githubusercontent.com/render/math?math=u%28t%29%20%3D%20K_pe%28t%29">
+    $u(t) = K_pe(t)$
 </p>
 
 Proportional control works pretty well for making our mouse drive straight, but you may have noticed a constant offset error. The motors naturally travel at different speeds given the same power and the constant offset error actually accounts for that difference. If we had zero error, we'd actually apply the same power to each motor, generating an error. How might we fix this? What if we kept track of the total error?
 
 <p align="center">
-    <img src="https://render.githubusercontent.com/render/math?math=u%28t%29%3DK_pe%28t%29%2BK_i%5Cint_0%5Ete%28%5Ctau%29d%5Ctau">
+    $u(t) = K_pe(t) + K_i\int_0^1 e(\tau) d\tau$
 </p>
 
-This is called a **proportional-integral (PI) controller**. The integral keeps track of the total error (both positive and negative) since we first started the controller. Even small errors will cause the integral term to eventually grow large enough and get <img src="https://render.githubusercontent.com/render/math?math=u%28t%29"> to push our mouse back on track.
+This is called a **proportional-integral (PI) controller**. The integral keeps track of the total error (both positive and negative) since we first started the controller. Even small errors will cause the integral term to eventually grow large enough and get $u(t)$ to push our mouse back on track.
 
 In order to dampen oscillations and prevent overshoot, we might want to consider the derivative of our error too. This prevents our error from changing too quickly.
 
 <p align="center">
-    $u(t) = K_pe(t) + K_i\int_0^1 e(\tau) dx + K_d\frac{de(t)}{dt}$
+    $u(t) = K_pe(t) + K_i\int_0^1 e(\tau) d\tau + K_d\frac{de(t)}{dt}$
 </p>
 
 With these three terms, we have our **proportional-integral-derivative (PID) controller**. $K_p$, $K_i$, and $K_d$ are tunable gains that determine the behavior of our error (rise time, peak, overshoot, etc.).
