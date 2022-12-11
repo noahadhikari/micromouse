@@ -20,7 +20,7 @@ For a P controller, we vary our motor power proportionally to our error. That is
 
 ## Drive Straight
 
-Copy over the skeleton code in [labs/lab5/](../labs/lab5) onto your mouse. Our code is getting too long to just copy paste every time. By default, the code makes the mouse drive forward at 20% speed. Next, copy over your code from [Lab 4](lab4.md) to compute `dist` and `theta` based on encoder readings.
+Copy over the skeleton code in [labs/lab5/](../labs/lab5) onto your mouse. Our code is getting too long to just copy paste every time. By default, the code makes the mouse drive forward at 20% speed. Next, copy over your code from [Lab 5](lab5.md) to compute `dist` and `theta` based on encoder readings.
 
 Your job is to apply P control to make the mouse drive straight. The linear velocity doesn't matter too much, just the fact that it doesn't veer left or right. To do this, it would help to answer the following questions.
 
