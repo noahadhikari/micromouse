@@ -21,10 +21,10 @@ This is called a **proportional-integral (PI) controller**. The integral keeps t
 In order to dampen oscillations and prevent overshoot, we might want to consider the derivative of our error too. This prevents our error from changing too quickly.
 
 <p align="center">
-    <img src="https://render.githubusercontent.com/render/math?math=u%28t%29%3DK_pe%28t%29%2BK_i%5Cint_0%5Ete%28%5Ctau%29d%5Ctau%2BK_d%5Cfrac%7Bde%28t%29%7D%7Bdt%7D">
+    $u(t) = K_pe(t) + K_i\int_0^1 e(\tau) dx + K_d\frac{de(t)}{dt}$
 </p>
 
-With these three terms, we have our **proportional-integral-derivative (PID) controller**. <img src="https://render.githubusercontent.com/render/math?math=K_p">, <img src="https://render.githubusercontent.com/render/math?math=K_i">, and <img src="https://render.githubusercontent.com/render/math?math=K_d"> are tunable gains that determine the behavior of our error (rise time, peak, overshoot, etc.).
+With these three terms, we have our **proportional-integral-derivative (PID) controller**. $K_p$, $K_i$, and $K_d$ are tunable gains that determine the behavior of our error (rise time, peak, overshoot, etc.).
 
 Let's go over what each of the terms in PID means.
 
