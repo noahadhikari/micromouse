@@ -34,7 +34,7 @@ When implementing the P controller, start with $K_p$ values of around 0.1 and tu
 
 1. Demonstrate your working P controller. Print out your error term too.
 2. How do you compute the error term?
-3. If we want our applied correction power $u(t)$ to be maximized ($u(t) = 1$) when the error is 2 radians, what is $K_p$?
+3. If we want our applied correction power $u(t)$ to be maximized $(u(t) = 1)$ when the error is 2 radians, what is $K_p$?
 4. What happens when $K_p$ is too low? How about too high? What value did you end up using?
 
 ## Go the Distance
