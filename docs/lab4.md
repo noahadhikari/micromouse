@@ -98,7 +98,7 @@ Let's try estimating actual distances from the sensor values. Empirically, the r
 Load up [`code.py`](../labs/lab3/code.py) which contains code to automate finding the constants. You'll be using a maze wall and ruler to take readings at various distances. The code then uses least squares to fit a line to the points and prints out the constants at the end. The equation using these constants to convert sensor readings to distances can be expressed as follows.
 
 <p align="center">
-    <img src="https://render.githubusercontent.com/render/math?math=distance%3Da%5Ccdot%20sensor%2Bb">
+    $distance = a \cdot sensor + b$
 </p>
 
 ### Checkoff #3
