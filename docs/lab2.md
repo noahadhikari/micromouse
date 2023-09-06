@@ -1,4 +1,4 @@
-# Lab 2: CircuitPython Basics
+# Lab 1: CircuitPython Basics
 
 ## CircuitPython Basics
 
