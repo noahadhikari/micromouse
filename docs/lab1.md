@@ -1,4 +1,4 @@
-# Lab 1: Assembly
+# Lab 2: Assembly
 
 ## Assembly
 
