@@ -1,5 +1,7 @@
 # Lab 2: Assembly
 
+PLUG YOUR PI PICO INTO YOUR COMPUTER BEFORE YOU SOLDER IT JUST TO MAKE SURE IT WORKS :D
+
 ## Assembly
 
 Download the `ibom.html` from the [release](https://github.com/dragonlock2/MMv3/releases) that matches your board revision and open it in your preferred browser. The interactive BOM (bill of materials) shows what parts are needed on your mouse's PCB (printed circuit board) and where they need to be placed.
